@@ -1,0 +1,8 @@
+{
+  "name": "wavesPlatform",
+  "type": "angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "pro_id": "b873e18f"
+}

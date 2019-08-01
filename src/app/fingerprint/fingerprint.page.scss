@@ -1,0 +1,26 @@
+ion-content{
+    --background:none;
+    background: url(../../assets/img/wallpaper.png) 0 0/100% 100% no-repeat;
+    height: 100%;
+    width: 100%;
+    ion-row:nth-child(1){
+        width: 100%;
+        margin-top: 120%;
+        font-size: medium;
+        color: white;
+    }
+    ion-row:nth-child(2){
+        ion-button{
+            width: 50%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+    ion-row:nth-child(3){
+        margin-top: 35%;
+        ion-img{
+            width: 15%;
+            height: 15%;
+        }
+    }
+}

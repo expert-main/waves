@@ -1,0 +1,136 @@
+<ion-content>
+  <!-- header part -->
+  <ion-row padding class="header">
+    <ion-col justify-align:center>
+      <ion-icon name="arrow-round-back" md="md-arrow-round-back" justify-content-left></ion-icon>       
+    </ion-col>
+
+    <ion-col>
+      <ion-item>
+        <ion-img style="width: 20px; height: 20px;" src="../../../assets/img/waves.jpg"></ion-img>
+        <ion-img style="width: 50px; height: 50px;" src="../../../assets/img/farafina.jpg" tappable></ion-img>
+        <ion-img style="width: 20px; height: 20px;" src="../../../assets/img/bitcoin.jpg"></ion-img>
+      </ion-item>
+    </ion-col>
+
+    <ion-col justify-position-right> 
+      <ion-icon ios="ios-star" md="md-star" color="primary"></ion-icon>
+    </ion-col>   
+    
+  </ion-row>
+
+  <!-- farafina caption -->
+  <ion-row>
+    <ion-row justify-content-center class="caption">
+      Farafina
+    </ion-row>
+  
+    <ion-row justify-content-center>
+      Waves token
+    </ion-row>
+  </ion-row>   
+<!-- balance -->
+  <ion-card padding class="balance" mode="md">
+    <ion-row>
+      <ion-label>
+        Available balance
+      </ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label class="caption">
+        <span>{{farafina.balance}}</span>.00000000
+      </ion-label>
+    </ion-row>
+
+    <ion-row class="balance_item">
+      <ion-col>
+        <ion-row justify-align-left>
+            <ion-img style="width: 35px; height: 35px;" src="../../../assets/img/send.jpg"></ion-img>    
+        </ion-row>
+        <ion-row justify-content-center class="caption">
+          Send
+        </ion-row>
+      </ion-col>
+
+      <ion-col justify-align-center>
+        <ion-row justify-align-center>
+          <ion-img style="width: 35px; height: 35px;" src="../../../assets/img/receive.jpg"></ion-img>    
+        </ion-row>
+        <ion-row justify-content-center class="caption">
+          Receive
+        </ion-row>
+      </ion-col>
+
+      <ion-col justify-content-center>
+        <ion-row justify-align-center>
+            <ion-img style="width: 35px; height: 35px;" src="../../../assets/img/comingSoon.jpg"></ion-img>    
+        </ion-row>
+        <ion-row justify-content-center class="caption">
+          Coming soon
+        </ion-row>
+      </ion-col>
+      
+    </ion-row>
+  </ion-card>
+
+<!-- last transaction -->
+  <ion-row padding class="last">
+    Last transactions
+  </ion-row>
+
+<!-- last transaction content -->
+  <ion-card class="transaction" mode="md">
+    <ion-row>
+      <ion-col>
+        <ion-img style="width: 65px; height: 65px;" src="../../../assets/img/sent.jpg"></ion-img>   
+      </ion-col>
+
+      <ion-col>
+        <ion-row>
+          {{farafina.tx_type}}
+        </ion-row>
+        <ion-row class="caption">
+          <span>{{farafina.tx_quantity}}M </span> {{farafina.tx_name}}
+        </ion-row>
+      </ion-col>
+
+      <ion-col>
+        <ion-img style="width: 25px; height: 25px; margin-top: 15%; margin-left:65%;" src="../../../assets/img/important.jpg"></ion-img> 
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card mode="md"> 
+    <ion-card-header  class="caption">Transaction history</ion-card-header>
+  </ion-card>
+  <hr>
+
+  <!-- asset info -->
+  <ion-row class="asset">
+    <ion-row class="caption">
+      Asset Info
+    </ion-row>
+  <!-- name -->
+    <ion-row>
+      <ion-row>
+        Name
+      </ion-row>
+      <ion-row class="caption">
+        {{farafina.tx_name}}
+      </ion-row>
+    </ion-row>
+  
+    <!-- issuer -->
+  
+    <ion-row>
+      <ion-row>
+        Issuer
+      </ion-row>
+      <ion-row class="caption">
+        {{napole_info.address}}
+        <ion-icon name="ios-browsers"></ion-icon>
+      </ion-row>
+    </ion-row>
+  </ion-row>
+  
+</ion-content>
+  

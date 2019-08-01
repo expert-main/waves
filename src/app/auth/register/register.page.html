@@ -1,0 +1,28 @@
+<ion-content padding>
+  <form  #form="ngForm" (ngSubmit)="get()">
+    <ion-grid justify-content-center>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-left>            
+            <ion-icon name="arrow-round-back"></ion-icon>
+            <ion-label color="contrast" stacked>Add</ion-label>
+          </div>          
+        </ion-col>
+      </ion-row>
+      <ion-row color="primary">
+          <ion-item>
+            <ion-input  name="address" type="text" placeholder="Address" [(ngModel)]="user.address" required></ion-input>
+            <ion-img style="width: 20px; height: 20px;" src="../../../assets/img/address.jpg"></ion-img>
+          </ion-item>
+      </ion-row>
+      <ion-row color="primary" justify-content-center>
+          <ion-item>
+            <ion-input  name="name" type="text" placeholder="Name" [(ngModel)]="user.name" required></ion-input>
+          </ion-item>
+      </ion-row>
+      <ion-row color="primary" justify-content-center style="margin-top: 100%;">
+        <ion-button style="text-transform:none" size="large" type="submit" expand="block">Save</ion-button>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
